@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>aaaaaaa Example</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/main.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/secondary.css}">
+    <script type="text/javascript" th:src="@{/main.js}"></script>
+    <script type="text/javascript" th:src="@{/secondary.js}"></script>
+</head>
+<body>
+<script type="text/javascript" th:src="@{/script-in-body.js}"></script>
+<ul th:fragment="my-fragment1">
+    <li><a href="@{/}">Home</a></li>
+    <li><a href="@{/products}">Product</a></li>
+    <li><a href="@{/about}">About</a></li>
+</ul>
+    <ul>
+        <li><a href="#">Product Management</a></li>
+        <li><a href="#">Order Management</a></li>
+    </ul>
+<div id="my-id1">
+    <p>Element DIV with id="my-id1"</p>
+</div>
+<p class="my-class">aaaaaaaaaaaaaaaaa</p>
+<p>aaaaaaaaaaaaaaaaaa2222222222222222</p>
+</body>
+</html>
